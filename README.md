@@ -1,0 +1,2 @@
+# pymysql_transaction_commitor
+pymysql_transaction_commitor 简称PTC工具,使用pymysql持续生成MySQL事务性数据,用于MySQL数据一致性相关测试.
