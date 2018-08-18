@@ -1,0 +1,15 @@
+[server1]
+host = 192.168.20.101
+port = 3306
+user = app
+password = aaaaaa
+charset = utf8
+db = db_red_envelope
+
+[server2]
+host = 192.168.20.101
+port = 3306
+user = app
+password = aaaaaa
+charset = utf8
+db = db_red_envelope

@@ -1,0 +1,8 @@
+/.idea
+/venv
+/log
+/ansible.bat
+
+__pycache__/
+*.py[cod]
+*$py.class
