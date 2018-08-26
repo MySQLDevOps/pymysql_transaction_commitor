@@ -1,3 +1,2 @@
-numpy
-PyMySQL
-wheel
+numpy==1.15.1
+PyMySQL==0.9.2

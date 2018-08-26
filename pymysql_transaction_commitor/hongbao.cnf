@@ -2,14 +2,14 @@
 host = 192.168.20.101
 port = 3306
 user = app
-password = aaaaaa
+password = p@ssw0rd
 charset = utf8
-db = db_red_envelope
+db = db_hongbao
 
 [server2]
 host = 192.168.20.101
 port = 3306
 user = app
-password = aaaaaa
+password = p@ssw0rd
 charset = utf8
-db = db_red_envelope
+db = db_hongbao

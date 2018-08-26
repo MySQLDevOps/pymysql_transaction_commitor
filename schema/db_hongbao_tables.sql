@@ -1,8 +1,8 @@
--- /vagrant/PyMySQLConsistencyTesting/schema/tables.sql
+-- /vagrant/pymysql_transaction_commitor/schema/db_hongbao_tables.sql
 
-drop database db_red_envelope;
-create database db_red_envelope;
-use db_red_envelope;
+drop database db_hongbao;
+create database db_hongbao;
+use db_hongbao;
 
 create table `user`(
   uid int not null AUTO_INCREMENT COMMENT 'PK',
@@ -107,7 +107,7 @@ create table `group_member`(
   key(upt_time)
 )engine=innodb, COMMENT '群成员表';
 
-create table `red_envelope`(
+create table `hongbao`(
   reid int not null AUTO_INCREMENT COMMENT '红包id',
   uid int not null COMMENT '用户id',
   gid int not null COMMENT '群id',
@@ -122,7 +122,7 @@ create table `red_envelope`(
   key(add_time)
 )engine=innodb, COMMENT '红包表';
 
-create table `red_envelope_detail`(
+create table `hongbao_detail`(
   id int not null AUTO_INCREMENT COMMENT 'PK',
   reid int not null COMMENT '红包id',
   uid int not null COMMENT '用户id',

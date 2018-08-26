@@ -61,35 +61,3 @@ def random_addr_province():
     """随机省份id"""
     return random.randint(1, 34)
 
-
-def parse_args():
-    """parse args for PyMySQLConsistencyTesting"""
-
-    parser = argparse.ArgumentParser(description='MySQL consistency testing', add_help=False)
-    connect_setting = parser.add_argument_group('connect setting')
-    connect_setting.add_argument('-h', '--host', dest='host', type=str,
-                                 help='Host the MySQL database server located', default='127.0.0.1')
-    connect_setting.add_argument('-u', '--user', dest='user', type=str,
-                                 help='MySQL Username to log in as', default='root')
-    connect_setting.add_argument('-p', '--password', dest='password', type=str,
-                                 help='MySQL Password to use', default='')
-    connect_setting.add_argument('-P', '--port', dest='port', type=int,
-                                 help='MySQL port to use', default=3306)
-    connect_setting.add_argument('-d', '--db', dest='db', type=str,
-                                 help='MySQL database to use', default='')
-    connect_setting.add_argument('--help', dest='help', action='store_true',
-                                 help='help information', default=False)
-
-    return parser
-
-
-def command_line_args(args):
-    need_print_help = False if args else True
-    parser = parse_args()
-    args = parser.parse_args(args)
-    if args.help or need_print_help:
-        parser.print_help()
-        sys.exit(1)
-    if not args.host:
-        raise ValueError('MySQL host must be specified and not empty.')
-    return args
