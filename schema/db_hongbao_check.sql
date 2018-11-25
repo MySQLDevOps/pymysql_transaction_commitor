@@ -1,4 +1,4 @@
--- /vagrant/PyMySQLConsistencyTesting/schema/check.sql
+-- /vagrant/pymysql_transaction_commitor/schema/check.sql
 
 use db_hongbao;
 select

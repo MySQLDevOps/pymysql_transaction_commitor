@@ -20,6 +20,7 @@ pymysql_transaction_commitor 简称PTC工具,使用pymysql持续生成MySQL事�
 
 ```
 shell> git clone https://github.com/alvinzane/pymysql_transaction_commitor.git
+shell> yum install python-pip
 shell> pip install -r requirements.txt
 ```
 
