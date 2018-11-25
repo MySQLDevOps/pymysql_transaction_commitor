@@ -57,3 +57,32 @@ hb_dt_amount:已收红包总额
 
 其它略,请自行查行参考SQL语句.
 ```
+
+## 分支操作
+```
+1）进入github的项目的主页面，点击右上角的Fork按钮即可建立自己的分支。
+
+2）从自己的分支复制到本地
+
+git clone https://github.com/yourfork/pymysql_transaction_commitor
+
+3）添加主库URL:
+
+git remote add PTC https://github.com/MySQLDevOps/pymysql_transaction_commitor
+
+4)获取主库的修改
+
+git fetch PTC
+
+5)合并主库代码到自己的本地分支上：
+
+git merge PTC/master master
+
+git pull origin master
+
+6)上推到自己的github网站账号：
+
+git push origin master
+
+7)将自己的github网站分支将更新同步到主库：在自己的github网站分支按“pull request”按钮
+```
